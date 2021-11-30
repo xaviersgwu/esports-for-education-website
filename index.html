@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Esports For Education Homepage</title>
+        <link href="https://fonts.googleapis.com/css?family=M+PLUS+1" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="left-side">
+                    <div class="nav-link-wrapper">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>    
+                        <a href="https://gwu.campuslabs.com/engage/organization/gwu-esports">Engage</a>
+                        <a href="https://discord.gg/KEjZqymeNV">Discord</a>
+                        <a href="https://www.twitch.tv/gwuesports">Twitch</a>
+                        <a href="contact-us.html">Contact Us</a>
+                    </div>
+                </div>
+                <div class="right-side"> 
+                    <div class="brand">  
+                        <div>ESPORTS FOR EDUCATION</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(efeimages/portfolio1.jpg)">
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="efeimages/dcsaalogo.png">
+                        </div>
+                        <div class="subtitle">
+                            The DCSAA (District of Columbia State Athletic Association) is the only officially recognized varsity-level high school esports league in Washington D.C. 
+                            This league is a great way for schools to promote character development through esports especially in communication, discipline, self-esteem and sportsmanship through gameplay. 
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(efeimages/portfolio2.jpg)">
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="efeimages/PlayVSLogo.png">
+                        </div>
+                        <div class="subtitle">
+                            PlayVS is one of the largest collegiate and high school esports league organizers and provide tournaments with games such as League of Legends, Rocket League, SMITE and more on their roster.
+                            The association is known for having attracted a large crowd of viewers and participants interested in getting a chance at taking their shot at the winnings pool offered to the highest ranking teams.
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(efeimages/keyboardphoto.jpg)">
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="efeimages/GWUESLogo.png">
+                        </div>
+                        <div class="subtitle">
+                            GWU Esports is the fastest growing organization within The George Washington University, having gained over 500 members in 2021, and is the home to a massive hub and community for GWU students, alumni and friends to discuss their mutual interest in video games.
+                            "Esports for Education" is GWU Esports' most recent and ambitious project which GWU Esports is undertaking.
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-wrapper">
+            <div class="roadmap-items-wrapper">
+                <h1>ABOUT THE PROJECT</h1>
+                <div class="roadmap-item-wrapper">
+                    <h2>Support for Communities in Washington, D.C.</h2>
+                    <h3></h3>
+                </div>
+            </div>
+            
+        </div>
+    </body>
+    <script>
+        const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+        portfolioItems.forEach(portfolioItem => {
+            portfolioItem.addEventListener('mouseover',()=> {
+                portfolioItem.childNodes[1].classList.add('img-darken');
+            })
+            portfolioItem.addEventListener('mouseout',()=> {
+                portfolioItem.childNodes[1].classList.remove('img-darken');
+            })
+        })
+    </script>
+</html>

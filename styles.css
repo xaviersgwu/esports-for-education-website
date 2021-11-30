@@ -1,0 +1,167 @@
+/* Master Styles */
+body {
+    font-family: "M PLUS 1", sans-serif;
+    margin: 0px;
+    color: #033C5A;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Nav Style */
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.left-side {
+    display: flex;
+}
+
+.nav-wrapper > .left-side > div {
+    margin-right: 50px;
+    margin-left: 50px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: #033C5A;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid #033C5A;
+}
+
+.nav-link-wrapper a:hover {
+     color: #033C5A
+}
+
+ /* Portfolio Section Styles */
+
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+     position: relative;
+}
+
+.portfolio-img-background {
+     height: 500px;
+     width: 100%;
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logo-wrapper img {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.img-text-wrapper .subtitle {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+
+.img-text-wrapper:hover .subtitle{
+    font-weight: 600;
+    color: #AA9868;
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+}
+/* About page */
+.two-column-wrapper {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+}
+
+.profile-image-wrapper img {
+    width: 100%;
+}
+
+.profile-content-wrapper {
+    padding: 30px;
+}
+
+.profile-content-wrapper h1 {
+    color: #033C5A;
+}
+/*Contact Us Page*/
+.contact-box {
+    background:#033C5A;
+    display: flex;
+}
+.contact-left {
+    flex-basis: 60%;
+    padding: 40px 60px;
+    color: white;
+} 
+.contact-right {
+    flex-basis: 40%;
+    padding: 40px;
+    background:rgb(36, 35, 35);
+    color:#AA9868;
+} 
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.input-row .input-group {
+    flex-basis: 45%;
+}
+input {
+    width: 100%;
+}
+textarea{
+    width: 100%;
+}
+button{
+    background: black;
+    color: white;
+    width: 100px;
+    border: none;
+    outline: none;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 10px;
+    box-shadow: 0px 5px 15px 0px rgb(36, 35, 35);
+}
+tr td:first-child {
+    padding-right:20px;
+}
+tr td{
+    padding-top: 20px;
+}
